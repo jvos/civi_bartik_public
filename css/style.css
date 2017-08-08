@@ -47,7 +47,7 @@ html, body, #page-wrapper {
   text-shadow: none;
 }
 #crm-container span.crm-button input, .crm-container span.crm-button input {
-  font-size: 14px;
+  font-size: 14px !important;
   text-transform: uppercase;
   text-shadow: none;
   color: #fff;
@@ -115,81 +115,82 @@ html, body, #page-wrapper {
     width: 80%;
   }
 }
-.main-content img {
+
+#content img {
   max-width: 100%;
   height: auto;
 }
-.main-content .crm-event-info-form-block .event-info .label {
+#content .crm-event-info-form-block .event-info .label {
   width: auto;
 }
-.main-content .crm-event-info-form-block .event-info .content {
+#content .crm-event-info-form-block .event-info .content {
   float: left;
   margin-left: 15px;
 }
-.main-content .crm-event-info-form-block .event_map-section .content {
+#content .crm-event-info-form-block .event_map-section .content {
   width: 100%;
   margin-left: 0;
 }
-.main-content .crm-event-info-form-block .event_map-section #google_map {
+#content .crm-event-info-form-block .event_map-section #google_map {
   max-width: 100%;
 }
-.main-content .crm-event-info-form-block .action-link {
+#content .crm-event-info-form-block .action-link {
   padding: 0;
 }
-.main-content .crm-contribution-main-form-block #priceset .label {
+#content .crm-contribution-main-form-block #priceset .label {
   float: none;
   text-align: left;
 }
-@media (min-width: 768px) {
-  .main-content .crm-contribution-main-form-block #priceset .label {
+@media only screen and (min-width: 768px) {
+  #content .crm-contribution-main-form-block #priceset .label {
     float: left;
     text-align: right;
   }
 }
-.main-content .crm-contribution-main-form-block #priceset .content {
+#content .crm-contribution-main-form-block #priceset .content {
   margin-left: 0;
 }
-@media (min-width: 768px) {
-  .main-content .crm-contribution-main-form-block #priceset .content {
+@media only screen and (min-width: 768px) {
+  #content .crm-contribution-main-form-block #priceset .content {
     margin-left: 19%;
   }
 }
-.main-content .crm-contribution-main-form-block #priceset .section-pricesetTotal .label {
+#content .crm-contribution-main-form-block #priceset .section-pricesetTotal .label {
   float: left;
   width: auto;
 }
-@media (min-width: 768px) {
-  .main-content .crm-contribution-main-form-block #priceset .section-pricesetTotal .label {
+@media only screen and (min-width: 768px) {
+  #content .crm-contribution-main-form-block #priceset .section-pricesetTotal .label {
     width: 17%;
   }
 }
-.main-content .crm-contribution-main-form-block #priceset .section-pricesetTotal .content {
+#content .crm-contribution-main-form-block #priceset .section-pricesetTotal .content {
   float: left;
   margin-left: 15px;
 }
-@media (min-width: 768px) {
-  .main-content .crm-contribution-main-form-block #priceset .section-pricesetTotal .content {
+@media only screen and (min-width: 768px) {
+  #content .crm-contribution-main-form-block #priceset .section-pricesetTotal .content {
     float: none;
     margin-left: 19%;
   }
 }
-.main-content .crm-contribution-main-form-block .email-5-section .label {
+#content .crm-contribution-main-form-block .email-5-section .label {
   float: none;
   width: auto;
   text-align: left;
 }
-@media (min-width: 768px) {
-  .main-content .crm-contribution-main-form-block .email-5-section .label {
+@media only screen and (min-width: 768px) {
+  #content .crm-contribution-main-form-block .email-5-section .label {
     float: left;
     width: 17%;
     text-align: right;
   }
 }
-.main-content .crm-contribution-main-form-block .email-5-section .content {
+#content .crm-contribution-main-form-block .email-5-section .content {
   margin-left: 0;
 }
-@media (min-width: 768px) {
-  .main-content .crm-contribution-main-form-block .email-5-section .content {
+@media only screen and (min-width: 768px) {
+  #content .crm-contribution-main-form-block .email-5-section .content {
     margin-left: 19%;
   }
 }

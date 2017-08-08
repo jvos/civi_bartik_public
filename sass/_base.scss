@@ -46,7 +46,7 @@ html,body,#page-wrapper {
     span.crm-button {
         @extend a.button;
         input {
-            font-size: 14px;
+            font-size: 14px !important; // inportant is overwrite civicrm.css
             text-transform: uppercase;
             text-shadow: none;
             color: #fff;
@@ -101,11 +101,30 @@ html,body,#page-wrapper {
     width: 100%;
     margin: 0 auto;
     position: relative;
+    //background-color: #334455;
+    
     @include respond-to($breakpoint-desktop) {
         width: 90%;
+        //background-color: #445533;
     }
     @include respond-to($breakpoint-wide) {
         width: 80%;
+        //background-color: #554433;
+    }
+}
+
+#content {
+    //background-color: #334455;
+    
+    @include respond-to($breakpoint-tablet) {
+        //background-color: #335544;
+    }
+    
+    @include respond-to($breakpoint-desktop) {
+        //background-color: #445533;
+    }
+    @include respond-to($breakpoint-wide) {
+        //background-color: #554433;
     }
     
     img {
@@ -154,8 +173,8 @@ html,body,#page-wrapper {
             .label {
                 float: none;
                 text-align: left;
-
-                @media (min-width: $breakpoint-tablet) {
+                
+                @include respond-to($breakpoint-tablet) {
                     float: left;
                     text-align: right;
                 }
@@ -164,7 +183,7 @@ html,body,#page-wrapper {
             .content {
                 margin-left: 0;
 
-                @media (min-width: $breakpoint-tablet) {
+                @include respond-to($breakpoint-tablet) {
                     margin-left: 19%;
                 }
             }
@@ -175,7 +194,7 @@ html,body,#page-wrapper {
                     float: left;
                     width: auto;
 
-                    @media (min-width: $breakpoint-tablet) {
+                    @include respond-to($breakpoint-tablet) {
                         width: 17%;
                     }
                 }
@@ -184,7 +203,7 @@ html,body,#page-wrapper {
                     float: left;
                     margin-left: 15px;
 
-                    @media (min-width: $breakpoint-tablet) {
+                    @include respond-to($breakpoint-tablet) {
                         float: none;
                         margin-left: 19%;
                     }
@@ -200,7 +219,7 @@ html,body,#page-wrapper {
 
                 text-align: left;
 
-                @media (min-width: $breakpoint-tablet) {
+                @include respond-to($breakpoint-tablet) {
                     float: left;
                     width: 17%;
 
@@ -210,7 +229,7 @@ html,body,#page-wrapper {
             .content {
                 margin-left: 0;
 
-                @media (min-width: $breakpoint-tablet) {
+                @include respond-to($breakpoint-tablet) {
                     margin-left: 19%;
                 }
             }
