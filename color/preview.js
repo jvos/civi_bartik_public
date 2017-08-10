@@ -12,12 +12,12 @@
         $('div').remove('#preview-logo');
       }
 
-      $('#preview .primary-color', form).css('color', $('#palette input[name="palette[primary-color]"]', form).val());
-      $('#preview .primary-color-background', form).css('background-color', $('#palette input[name="palette[primary-color]"]', form).val());
-      $('#preview .primary-color-border-top', form).css('border-top-color', $('#palette input[name="palette[primary-color]"]', form).val());
+      $('#preview .base-color', form).css('color', $('#palette input[name="palette[base]"]', form).val());
+      $('#preview .base-color-background', form).css('background-color', $('#palette input[name="palette[base]"]', form).val());
+      $('#preview .base-color-border-top', form).css('border-top-color', $('#palette input[name="palette[base]"]', form).val());
       $('#preview .secondary-color', form).css('color', $('#palette input[name="palette[secondary-color]"]', form).val());
       $('#preview .third-color', form).css('color', $('#palette input[name="palette[third-color]"]', form).val());
-      $('#preview .font-color', form).css('color', $('#palette input[name="palette[font-color]"]', form).val());
+      $('#preview .text-color', form).css('color', $('#palette input[name="palette[text]"]', form).val());
       $('#preview .border-color', form).css('border-color', $('#palette input[name="palette[border-color]"]', form).val());
       $('#preview .error-background', form).css('background-color', $('#palette input[name="palette[error-background]"]', form).val());
       $('#preview .error-text', form).css('color', $('#palette input[name="palette[error-text]"]', form).val());
