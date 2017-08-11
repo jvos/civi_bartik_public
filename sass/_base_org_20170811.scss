@@ -112,10 +112,6 @@ body,
     }
 }
 
-#page-wrapper, #footer-wrapper {
-    background: #545454;
-}
-
 #crm-container, 
 .crm-container {
     line-height: $line-height;
@@ -164,55 +160,37 @@ body,
             color: #fff;
         }
     }
-    
-    .crm-submit-buttons {
-        height: 50px;
-    }
-    
     .crm-section {
         .label {
             text-align: left;
-            float: left;
-            width: 24%;
-            text-align: right;
-            display: block;
-        
             label {
                 font-weight: 700;
             }
         }
-        
-        .content {
-            margin-left: 24%;
-        }
     }
-    
-    fieldset {
-        legend {
-            padding: 4px 4px 4px 0;
-            
-            @include respond-to($breakpoint-tablet) {
-                padding: 4px;
-            }
-        }
-    }
-    
     .register_link-section {
         padding: 0;
         margin: 15px 0;
     }
+}
+
+.main-content {
+    border-top: 20px solid $primary-color;
+    padding: 0px 5px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
     
-    td.price_set_option-label {
-        padding: 0px;
+    @include respond-to($breakpoint-desktop) {
+        width: 90%;
     }
+    @include respond-to($breakpoint-wide) {
+        width: 80%;
+    }
+}
+
+#content {    
     
-    .form-layout-compressed td {
-        padding: 0 10px 0 0;
-    }
-    
-    .iCal_links-section {
-        margin-top: 50px;
-    }
     
     // Civicrm event
     .crm-event-info-form-block {
@@ -317,57 +295,64 @@ body,
             }
         }
     }
-    
-    // Civicrm socialnetwork
-    .crm-socialnetwork {
-        &.help {
-            width: 100%;
-            height: auto;
-            background: transparent;
-            border: 1px solid #f1f1f1;
-                        
-            .label {
-                width: 100% !important;
-                padding-top: 0;
-                padding-right: 0;
-                text-align: left;
-                
-                @include respond-to($breakpoint-tablet) {
-                    width: 24% !important;
-                    padding-top: 6px;
-                    padding-right: 6px;
-                    text-align: right;
-                }
-            } 
-            
-            h3 {
-                color: $font-color;
-            }
-            
-            iframe {
-                width: 100% !important;
-                height: 40px !important;
-                min-height: 0 !important;
-                
-                @include respond-to($breakpoint-phone) {
-                    height: 30px !important;
-                }
-            }
-        }
+}
+
+h1.title {
+    color: $secondary-color;
+}
+
+.crm-container 
+
+.crm-container .crm-submit-buttons {
+    height: 50px;
+}
+
+.crm-container td.price_set_option-label {
+    padding: 0px;
+}
+
+.crm-container .form-layout-compressed td {
+    padding: 0 10px 0 0;
+}
+
+.crm-container .help, .crm-container #help {
+    background: transparent;
+    border: 1px solid #f1f1f1;
+    height: auto;
+    h3 {
+        color: $font-color;
+    }
+    .label {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
-.main-content {
-    border-top: 20px solid $primary-color;
-    padding: 0px 5px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    
-    @include respond-to($breakpoint-desktop) {
-        width: 90%;
+.iCal_links-section {
+    margin-top: 50px;
+}
+
+.crm-container .crm-section {
+    .label{
+        float: left;
+        width: 24%;
+        text-align: right;
+        display: block;
     }
-    @include respond-to($breakpoint-wide) {
-        width: 80%;
+    .content {
+        margin-left: 24%;
+    }
+}
+
+#page-wrapper, #footer-wrapper {
+    background: #545454;
+}
+
+div.crm-section.crm-socialnetwork.help {
+    iframe {
+        min-height: 0 !important;
+    }
+    .label {
+        width: 17%;
     }
 }

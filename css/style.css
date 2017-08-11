@@ -81,54 +81,34 @@ html, body, table, td, tr {
   box-sizing: border-box;
 }
 
-html, body, #page-wrapper {
+html,
+body,
+#page-wrapper {
   min-width: 0;
 }
 
-#skip-link, #page-wrapper, #sidebar-first, #sidebar-second, #content, .one-sidebar #content, #footer {
+#skip-link,
+#page-wrapper,
+#sidebar-first,
+#sidebar-second,
+#content,
+.one-sidebar #content,
+#footer {
   width: 100%;
   min-width: auto;
 }
 
-#crm-container, .crm-container {
-  line-height: 1.5;
+.topbar {
+  background: #f1f1f1;
+  border-bottom: 1px solid #d9d9d9;
+  height: 37px;
+  margin-bottom: 37px;
 }
-#crm-container iframe, .crm-container iframe {
-  width: 100%;
-  min-height: 200px;
-}
-#crm-container a, .crm-container a {
-  color: #de447a;
-  text-decoration: underline;
-}
-#crm-container a.button, #crm-container span.crm-button, .crm-container a.button, .crm-container #crm-container span.crm-button, #crm-container .crm-container span.crm-button, .crm-container span.crm-button {
-  padding: 6px 10px;
-  background: #6fb346;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #fff;
-  font-size: 14px;
-  border-radius: 3px;
-  border: 0;
-  outline: 0;
-  text-decoration: none;
-  text-shadow: none;
-}
-#crm-container span.crm-button input, .crm-container span.crm-button input {
-  font-size: 14px !important;
-  text-transform: uppercase;
-  text-shadow: none;
-  color: #fff;
-}
-#crm-container .crm-section .label, .crm-container .crm-section .label {
-  text-align: left;
-}
-#crm-container .crm-section .label label, .crm-container .crm-section .label label {
-  font-weight: 700;
-}
-#crm-container .register_link-section, .crm-container .register_link-section {
-  padding: 0;
-  margin: 15px 0;
+
+.header {
+  text-align: center;
+  background: #fff !important;
+  padding-bottom: 20px;
 }
 
 .wrapper {
@@ -153,17 +133,235 @@ html, body, #page-wrapper {
   }
 }
 
-.topbar {
-  background: #f1f1f1;
-  border-bottom: 1px solid #d9d9d9;
-  height: 37px;
-  margin-bottom: 37px;
+#page-wrapper, #footer-wrapper {
+  background: #545454;
 }
 
-.header {
-  text-align: center;
-  background: #fff !important;
-  padding-bottom: 20px;
+#crm-container,
+.crm-container {
+  line-height: 1.5;
+}
+#crm-container iframe,
+.crm-container iframe {
+  width: 100%;
+  min-height: 200px;
+}
+#crm-container a,
+.crm-container a {
+  color: #de447a;
+  text-decoration: underline;
+}
+#crm-container a.button, #crm-container span.crm-button,
+.crm-container a.button,
+.crm-container #crm-container span.crm-button,
+#crm-container .crm-container span.crm-button,
+.crm-container span.crm-button {
+  padding: 6px 10px;
+  background: #6fb346;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  text-shadow: none;
+}
+#crm-container img,
+.crm-container img {
+  max-width: 100%;
+  height: auto;
+}
+#crm-container h3,
+.crm-container h3 {
+  background: #6fb346;
+  color: #fff;
+  padding: 0px;
+}
+#crm-container span.crm-button input,
+.crm-container span.crm-button input {
+  font-size: 14px !important;
+  text-transform: uppercase;
+  text-shadow: none;
+  color: #fff;
+}
+#crm-container .crm-submit-buttons,
+.crm-container .crm-submit-buttons {
+  height: 50px;
+}
+#crm-container .crm-section .label,
+.crm-container .crm-section .label {
+  text-align: left;
+  float: left;
+  width: 24%;
+  text-align: right;
+  display: block;
+}
+#crm-container .crm-section .label label,
+.crm-container .crm-section .label label {
+  font-weight: 700;
+}
+#crm-container .crm-section .content,
+.crm-container .crm-section .content {
+  margin-left: 24%;
+}
+#crm-container fieldset legend,
+.crm-container fieldset legend {
+  padding: 4px 4px 4px 0;
+}
+@media only screen and (min-width: 768px) {
+  #crm-container fieldset legend,
+  .crm-container fieldset legend {
+    padding: 4px;
+  }
+}
+#crm-container .register_link-section,
+.crm-container .register_link-section {
+  padding: 0;
+  margin: 15px 0;
+}
+#crm-container td.price_set_option-label,
+.crm-container td.price_set_option-label {
+  padding: 0px;
+}
+#crm-container .form-layout-compressed td,
+.crm-container .form-layout-compressed td {
+  padding: 0 10px 0 0;
+}
+#crm-container .iCal_links-section,
+.crm-container .iCal_links-section {
+  margin-top: 50px;
+}
+#crm-container .crm-event-info-form-block .event-info .label,
+.crm-container .crm-event-info-form-block .event-info .label {
+  width: auto;
+}
+#crm-container .crm-event-info-form-block .event-info .content,
+.crm-container .crm-event-info-form-block .event-info .content {
+  float: left;
+  margin-left: 15px;
+}
+#crm-container .crm-event-info-form-block .event_map-section .content,
+.crm-container .crm-event-info-form-block .event_map-section .content {
+  width: 100%;
+  margin-left: 0;
+}
+#crm-container .crm-event-info-form-block .event_map-section #google_map,
+.crm-container .crm-event-info-form-block .event_map-section #google_map {
+  max-width: 100%;
+}
+#crm-container .crm-event-info-form-block .action-link,
+.crm-container .crm-event-info-form-block .action-link {
+  padding: 0;
+}
+#crm-container .crm-contribution-main-form-block #priceset .label,
+.crm-container .crm-contribution-main-form-block #priceset .label {
+  float: none;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  #crm-container .crm-contribution-main-form-block #priceset .label,
+  .crm-container .crm-contribution-main-form-block #priceset .label {
+    float: left;
+    text-align: right;
+  }
+}
+#crm-container .crm-contribution-main-form-block #priceset .content,
+.crm-container .crm-contribution-main-form-block #priceset .content {
+  margin-left: 0;
+}
+@media only screen and (min-width: 768px) {
+  #crm-container .crm-contribution-main-form-block #priceset .content,
+  .crm-container .crm-contribution-main-form-block #priceset .content {
+    margin-left: 19%;
+  }
+}
+#crm-container .crm-contribution-main-form-block #priceset .section-pricesetTotal .label,
+.crm-container .crm-contribution-main-form-block #priceset .section-pricesetTotal .label {
+  float: left;
+  width: auto;
+}
+@media only screen and (min-width: 768px) {
+  #crm-container .crm-contribution-main-form-block #priceset .section-pricesetTotal .label,
+  .crm-container .crm-contribution-main-form-block #priceset .section-pricesetTotal .label {
+    width: 17%;
+  }
+}
+#crm-container .crm-contribution-main-form-block #priceset .section-pricesetTotal .content,
+.crm-container .crm-contribution-main-form-block #priceset .section-pricesetTotal .content {
+  float: left;
+  margin-left: 15px;
+}
+@media only screen and (min-width: 768px) {
+  #crm-container .crm-contribution-main-form-block #priceset .section-pricesetTotal .content,
+  .crm-container .crm-contribution-main-form-block #priceset .section-pricesetTotal .content {
+    float: none;
+    margin-left: 19%;
+  }
+}
+#crm-container .crm-contribution-main-form-block .email-5-section .label,
+.crm-container .crm-contribution-main-form-block .email-5-section .label {
+  float: none;
+  width: auto;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  #crm-container .crm-contribution-main-form-block .email-5-section .label,
+  .crm-container .crm-contribution-main-form-block .email-5-section .label {
+    float: left;
+    width: 17%;
+    text-align: right;
+  }
+}
+#crm-container .crm-contribution-main-form-block .email-5-section .content,
+.crm-container .crm-contribution-main-form-block .email-5-section .content {
+  margin-left: 0;
+}
+@media only screen and (min-width: 768px) {
+  #crm-container .crm-contribution-main-form-block .email-5-section .content,
+  .crm-container .crm-contribution-main-form-block .email-5-section .content {
+    margin-left: 19%;
+  }
+}
+#crm-container .crm-socialnetwork.help,
+.crm-container .crm-socialnetwork.help {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  border: 1px solid #f1f1f1;
+}
+#crm-container .crm-socialnetwork.help .label,
+.crm-container .crm-socialnetwork.help .label {
+  width: 100% !important;
+  padding-top: 0;
+  padding-right: 0;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  #crm-container .crm-socialnetwork.help .label,
+  .crm-container .crm-socialnetwork.help .label {
+    width: 24% !important;
+    padding-top: 6px;
+    padding-right: 6px;
+    text-align: right;
+  }
+}
+#crm-container .crm-socialnetwork.help h3,
+.crm-container .crm-socialnetwork.help h3 {
+  color: #635d5e;
+}
+#crm-container .crm-socialnetwork.help iframe,
+.crm-container .crm-socialnetwork.help iframe {
+  width: 100% !important;
+  height: 40px !important;
+  min-height: 0 !important;
+}
+@media only screen and (min-width: 576px) {
+  #crm-container .crm-socialnetwork.help iframe,
+  .crm-container .crm-socialnetwork.help iframe {
+    height: 30px !important;
+  }
 }
 
 .main-content {
@@ -182,145 +380,6 @@ html, body, #page-wrapper {
   .main-content {
     width: 80%;
   }
-}
-
-#content img {
-  max-width: 100%;
-  height: auto;
-}
-#content .crm-event-info-form-block .event-info .label {
-  width: auto;
-}
-#content .crm-event-info-form-block .event-info .content {
-  float: left;
-  margin-left: 15px;
-}
-#content .crm-event-info-form-block .event_map-section .content {
-  width: 100%;
-  margin-left: 0;
-}
-#content .crm-event-info-form-block .event_map-section #google_map {
-  max-width: 100%;
-}
-#content .crm-event-info-form-block .action-link {
-  padding: 0;
-}
-#content .crm-contribution-main-form-block #priceset .label {
-  float: none;
-  text-align: left;
-}
-@media only screen and (min-width: 768px) {
-  #content .crm-contribution-main-form-block #priceset .label {
-    float: left;
-    text-align: right;
-  }
-}
-#content .crm-contribution-main-form-block #priceset .content {
-  margin-left: 0;
-}
-@media only screen and (min-width: 768px) {
-  #content .crm-contribution-main-form-block #priceset .content {
-    margin-left: 19%;
-  }
-}
-#content .crm-contribution-main-form-block #priceset .section-pricesetTotal .label {
-  float: left;
-  width: auto;
-}
-@media only screen and (min-width: 768px) {
-  #content .crm-contribution-main-form-block #priceset .section-pricesetTotal .label {
-    width: 17%;
-  }
-}
-#content .crm-contribution-main-form-block #priceset .section-pricesetTotal .content {
-  float: left;
-  margin-left: 15px;
-}
-@media only screen and (min-width: 768px) {
-  #content .crm-contribution-main-form-block #priceset .section-pricesetTotal .content {
-    float: none;
-    margin-left: 19%;
-  }
-}
-#content .crm-contribution-main-form-block .email-5-section .label {
-  float: none;
-  width: auto;
-  text-align: left;
-}
-@media only screen and (min-width: 768px) {
-  #content .crm-contribution-main-form-block .email-5-section .label {
-    float: left;
-    width: 17%;
-    text-align: right;
-  }
-}
-#content .crm-contribution-main-form-block .email-5-section .content {
-  margin-left: 0;
-}
-@media only screen and (min-width: 768px) {
-  #content .crm-contribution-main-form-block .email-5-section .content {
-    margin-left: 19%;
-  }
-}
-
-h1.title {
-  color: #00969b;
-}
-
-.crm-container h3 {
-  background: #6fb346;
-  color: #fff;
-  padding: 0px;
-}
-
-.crm-container .crm-submit-buttons {
-  height: 50px;
-}
-
-.crm-container td.price_set_option-label {
-  padding: 0px;
-}
-
-.crm-container .form-layout-compressed td {
-  padding: 0 10px 0 0;
-}
-
-.crm-container .help, .crm-container #help {
-  background: transparent;
-  border: 1px solid #f1f1f1;
-  height: auto;
-}
-.crm-container .help h3, .crm-container #help h3 {
-  color: #635d5e;
-}
-.crm-container .help .label, .crm-container #help .label {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.iCal_links-section {
-  margin-top: 50px;
-}
-
-.crm-container .crm-section .label {
-  float: left;
-  width: 24%;
-  text-align: right;
-  display: block;
-}
-.crm-container .crm-section .content {
-  margin-left: 24%;
-}
-
-#page-wrapper, #footer-wrapper {
-  background: #545454;
-}
-
-div.crm-section.crm-socialnetwork.help iframe {
-  min-height: 0 !important;
-}
-div.crm-section.crm-socialnetwork.help .label {
-  width: 17%;
 }
 
 #crm-container a, .crm-container a {
