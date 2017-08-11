@@ -116,6 +116,10 @@ body,
   margin: 0 15px;
 }
 
+#messages {
+  margin: 0 15px;
+}
+
 .wrapper {
   width: 100%;
   margin: 0 auto;
@@ -318,18 +322,9 @@ body,
     width: auto;
   }
 }
-#crm-container .crm-event-info-form-block,
-.crm-container .crm-event-info-form-block {
-        /*.event-info {
-            .label {
-                width: auto;
-            }
-
-            .content {
-                float: left;
-                margin-left: 15px;
-            }
-        }*/
+#crm-container .crm-event-info-form-block .event_map-section .content,
+.crm-container .crm-event-info-form-block .event_map-section .content {
+  text-align: left;
 }
 #crm-container .crm-event-info-form-block .event_map-section .content,
 .crm-container .crm-event-info-form-block .event_map-section .content {

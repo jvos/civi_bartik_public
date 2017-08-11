@@ -101,6 +101,10 @@ body,
     margin: 0 15px;
 }
 
+#messages {
+    margin: 0 15px;
+}
+
 .wrapper {
     width: 100%;
     margin: 0 auto;
@@ -295,17 +299,12 @@ body,
     // Civicrm event
     .crm-event-info-form-block {
 
-        // Civicrm event all
-        /*.event-info {
-            .label {
-                width: auto;
-            }
-
+        // Civicrm event map
+        .event_map-section {
             .content {
-                float: left;
-                margin-left: 15px;
+                text-align: left;
             }
-        }*/
+        }
 
         // Civicrm event overwrite
         .event_map-section {
