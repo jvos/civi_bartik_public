@@ -96,6 +96,11 @@ body,
     padding-bottom: 20px;
 }
 
+.border-top {
+    border-top: 20px solid $primary-color;
+    margin: 0 15px;
+}
+
 .wrapper {
     width: 100%;
     margin: 0 auto;
@@ -110,6 +115,12 @@ body,
     @include respond-to($breakpoint-wide) {
         width: 1200px;
     }
+}
+
+.main-content {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 
 #page-wrapper, #footer-wrapper {
@@ -155,44 +166,21 @@ body,
         padding: 0px;
     }
     
-    span.crm-button {
-        @extend a.button;
-        input {
-            font-size: 14px !important; // inportant is overwrite civicrm.css
-            text-transform: uppercase;
-            text-shadow: none;
-            color: #fff;
-        }
-    }
-    
     .crm-submit-buttons {
         height: 50px;
-    }
-    
-    .crm-section {
-        .label {
-            text-align: left;
-            float: left;
-            width: 24%;
-            text-align: right;
-            display: block;
         
-            label {
-                font-weight: 700;
-            }
-        }
-        
-        .content {
-            margin-left: 24%;
-        }
-    }
-    
-    fieldset {
-        legend {
-            padding: 4px 4px 4px 0;
+        span.crm-button {
+            @extend a.button;
             
-            @include respond-to($breakpoint-tablet) {
-                padding: 4px;
+            .crm-i {
+                line-height: 26px;
+            }
+            
+            input {
+                font-size: 14px !important; // inportant is overwrite civicrm.css
+                text-transform: uppercase;
+                text-shadow: none;
+                color: #fff;
             }
         }
     }
@@ -213,12 +201,102 @@ body,
     .iCal_links-section {
         margin-top: 50px;
     }
+        
+    // Civicrm all 
+    .crm-section {
+        
+        fieldset {
+            display: table-row;
+            width: 100%;
+
+            legend {
+                padding: 4px 4px 4px 0;
+
+                @include respond-to($breakpoint-tablet) {
+                    padding: 4px;
+                }
+            }
+        }
+        
+        .label,
+        .content {
+            float: left;
+            text-align: left;
+            
+            @include respond-to($breakpoint-tablet) {
+                text-align: right;
+            }
+        }
+        
+        .label {
+            width: 100%;
+            
+            @include respond-to($breakpoint-tablet) {
+                width: 24%;
+                text-align: right;
+            }
+            
+            @include respond-to($breakpoint-desktop) {
+                width: 17%;
+                text-align: right;
+            }
+            
+            label {
+                font-weight: 700;
+            }
+        }
+        
+        .content {
+            width: 100%;
+            margin-left: 0;
+            
+            @include respond-to($breakpoint-tablet) {
+                width: auto;
+                margin-left: 4%;
+            }
+        }
+    }
+    
+    // Civicrm contribution
+    .crm-contribution-main-form-block {
+                
+        // Civicrm payment processor
+        .payment_processor-section {
+            .content {
+                width: auto;
+                text-align: left;
+                
+                input {
+                    float: left;
+                    width: 3%;
+                    
+                    @include respond-to($breakpoint-tablet) {
+                        float: none;
+                        width: auto;
+                    }
+                }
+                
+                label {
+                    display: inline-block;
+                    float: left;
+                    width: 90%;
+                    line-height: 22px;
+                    
+                    @include respond-to($breakpoint-tablet) {
+                        float: none;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+    
     
     // Civicrm event
     .crm-event-info-form-block {
 
         // Civicrm event all
-        .event-info {
+        /*.event-info {
             .label {
                 width: auto;
             }
@@ -227,7 +305,7 @@ body,
                 float: left;
                 margin-left: 15px;
             }
-        }
+        }*/
 
         // Civicrm event overwrite
         .event_map-section {
@@ -244,77 +322,6 @@ body,
         // Civicrm event action
         .action-link {
             padding: 0;
-        }
-    }
-
-    // Civicrm contribution
-    .crm-contribution-main-form-block {
-
-        // Civicrm contribution price
-        #priceset {
-            .label {
-                float: none;
-                text-align: left;
-                
-                @include respond-to($breakpoint-tablet) {
-                    float: left;
-                    text-align: right;
-                }
-            }
-
-            .content {
-                margin-left: 0;
-
-                @include respond-to($breakpoint-tablet) {
-                    margin-left: 19%;
-                }
-            }
-
-            // Civicrm contribution price overwrite fot total
-            .section-pricesetTotal {
-                .label {
-                    float: left;
-                    width: auto;
-
-                    @include respond-to($breakpoint-tablet) {
-                        width: 17%;
-                    }
-                }
-
-                .content {
-                    float: left;
-                    margin-left: 15px;
-
-                    @include respond-to($breakpoint-tablet) {
-                        float: none;
-                        margin-left: 19%;
-                    }
-                }
-            }
-        }
-
-        // Civicrm contrubtion e-mail
-        .email-5-section {
-            .label {
-                float: none;
-                width: auto;
-
-                text-align: left;
-
-                @include respond-to($breakpoint-tablet) {
-                    float: left;
-                    width: 17%;
-
-                    text-align: right;
-                }
-            }
-            .content {
-                margin-left: 0;
-
-                @include respond-to($breakpoint-tablet) {
-                    margin-left: 19%;
-                }
-            }
         }
     }
     
@@ -354,20 +361,5 @@ body,
                 }
             }
         }
-    }
-}
-
-.main-content {
-    border-top: 20px solid $primary-color;
-    padding: 0px 5px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    
-    @include respond-to($breakpoint-desktop) {
-        width: 90%;
-    }
-    @include respond-to($breakpoint-wide) {
-        width: 80%;
     }
 }
