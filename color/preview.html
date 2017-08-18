@@ -22,26 +22,37 @@
 
                 <fieldset>
                     <legend>Organization Details</legend>
-
-                    <div class="label">
-                        <label for="onbehalf_organization_name">  
-                            <span class="crm-error crm-error-label error-background error-text">Organization Name</span>
-                        </label>
+                    
+                    <div class="messages help">Organization Details Help.</div>
+                    
+                    <div class="crm-section">
+                        <div class="label">
+                            <label for="onbehalf_organization_name">  
+                                <span class="crm-error crm-error-label error-background error-text">Organization Name</span>
+                            </label>
+                        </div>
+                        <div class="content">
+                            <span class="crm-frozen-field">
+                                &nbsp;<input name="onbehalf[organization_name]" type="hidden">
+                                <span class="crm-error error-background error-text">Organization Name is a required field.</span>
+                            </span>
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                    <div class="content">
-                        <span class="crm-frozen-field">
-                            &nbsp;<input name="onbehalf[organization_name]" type="hidden">
-                            <span class="crm-error error-background error-text">Organization Name is a required field.</span>
-                        </span>
-                    </div>
+                    
+                    <div class="crm-section">
+                        <div class="content description">Street Adress (Primary) Description.</div>
 
-                    <div class="label text-color">
-                        <label>Street Address (Primary)</label>
-                    </div>                                                
-                    <div class="content text-color">
-                        <input maxlength="96" size="45" name="onbehalf[street_address-Primary]" class="huge crm-form-text text-color" type="text">
-                    </div>
+                        <div class="label text-color">
+                            <label>Street Address (Primary)</label>
+                        </div>
 
+                        <div class="content text-color">
+                            <input maxlength="96" size="45" name="onbehalf[street_address-Primary]" class="huge crm-form-text text-color" type="text">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                        
                 </fieldset>
 
                 <div id="crm-submit-buttons" class="crm-submit-buttons">
@@ -50,9 +61,9 @@
                     </span>
                 </div>
 
-                <div class="crm-public-footer text-color">
-                    empowered by <a href="https://civicrm.org/" title="CiviCRM.org - Growing and Sustaining Relationships" target="_blank" class="empowered-by-link third-color">
-                        <div class="empowered-by-logo"><span>CiviCRM</span></div>
+                <div class="text-color">
+                    Some text <a href="" class="third-color">
+                        <div><span>and a link.</span></div>
                     </a>  
                 </div>
         

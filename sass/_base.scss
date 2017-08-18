@@ -94,6 +94,12 @@ body,
     text-align: center;
     background: #fff !important;
     padding-bottom: 20px;
+    
+    #logo {
+        img {
+            max-width: 100%;
+        }
+    }
 }
 
 .border-top {
@@ -125,6 +131,10 @@ body,
     width: 100%;
     margin: 0 auto;
     position: relative;
+    
+    h1 {
+        word-wrap: break-word;
+    }
 }
 
 #page-wrapper, #footer-wrapper {
@@ -222,7 +232,7 @@ body,
             }
         }
         
-        .label,
+        /*.label,
         .content {
             float: left;
             text-align: left;
@@ -230,10 +240,12 @@ body,
             @include respond-to($breakpoint-tablet) {
                 text-align: right;
             }
-        }
+        }*/
         
         .label {
+            float: left;
             width: 100%;
+            text-align: left;
             
             @include respond-to($breakpoint-tablet) {
                 width: 24%;
@@ -251,12 +263,24 @@ body,
         }
         
         .content {
+            float: left;
             width: 100%;
             margin-left: 0;
             
             @include respond-to($breakpoint-tablet) {
+                float: none;
                 width: auto;
                 margin-left: 4%;
+            }
+            
+            .crm-error {
+                float: left;
+                width: 100%;
+                
+                @include respond-to($breakpoint-tablet) {
+                    float: none;
+                    width: auto;
+                }
             }
         }
     }
@@ -298,7 +322,28 @@ body,
     
     // Civicrm event
     .crm-event-info-form-block {
-
+        
+        // Civicrm event info
+        .event-info {
+            .crm-actionlinks-top {
+                display: inline-block;
+                width: 100%;
+                
+                @include respond-to($breakpoint-tablet) {
+                    display: block;
+                    width: auto;
+                }
+                
+                .action-link {
+                    float: left;
+                    
+                    @include respond-to($breakpoint-tablet) {
+                        float: right;
+                    }
+                }
+            }
+        }
+        
         // Civicrm event map
         .event_map-section {
             .content {
